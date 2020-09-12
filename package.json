@@ -1,5 +1,5 @@
 {
-  "name": "react-common-components-library",
+  "name": "@dariolm/react-common-components-library",
   "version": "1.0.0",
   "description": "Librería de componentes React (Empathy.co)",
   "main": "build/main.js",
