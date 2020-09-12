@@ -1,6 +1,6 @@
 {
   "name": "@dariolm/react-common-components-library",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Librería de componentes React (Empathy.co)",
   "main": "build/main.js",
   "files": [
@@ -31,7 +31,7 @@
   "homepage": "https://github.com/DarioLM/react-common-components-library#readme",
   "devDependencies": {
     "@babel/core": "^7.11.6",
-    "@storybook/react": "^5.3.21",
+    "@storybook/react": "6.0.21",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^10.4.9",
     "@types/jest": "^24.9.1",

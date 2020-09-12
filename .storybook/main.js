@@ -18,8 +18,8 @@ module.exports = {
         presets: [["react-app", { flow: false, typescript: true }]]
       }
     });
-    config.resolve.extensions = webpackConfig.resolve.extensions;
+    config.resolve.extensions.push(".ts", ".tsx");
     config.resolve.alias = webpackConfig.resolve.alias;
-    return config;
+    return { ...webpackConfig, ...config};
   }
 };
