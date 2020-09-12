@@ -9,7 +9,10 @@ module.exports = {
     libraryTarget: "umd"
   },
   resolve: {
-    extensions: [".ts", ".tsx"]
+    extensions: [".ts", ".tsx"],
+    alias: {
+        Assets: path.resolve(__dirname, "src/assets/")
+      }
   },
   module: {
     rules: [
