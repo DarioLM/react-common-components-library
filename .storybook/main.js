@@ -1,5 +1,5 @@
 const path = require("path");
-
+const webpackConfig = require("../webpack.config");
 module.exports = {
   stories: ["../src/**/*.stories.tsx"],
   // Storybook addons: https://storybook.js.org/addons/
@@ -18,8 +18,8 @@ module.exports = {
         presets: [["react-app", { flow: false, typescript: true }]]
       }
     });
-    config.resolve.extensions.push(".ts", ".tsx");
-
+    config.resolve.extensions = webpackConfig.resolve.extensions;
+    config.resolve.alias = webpackConfig.resolve.alias;
     return config;
   }
 };
