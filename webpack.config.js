@@ -8,7 +8,7 @@ module.exports = {
     // tabPanel: "",
   },
   output: {
-    path: path.resolve(__dirname, "build"),
+    path: path.resolve(__dirname, "modules"),
     filename: "[name].js",
     library: "react-common-components-library",
     libraryTarget: "umd"

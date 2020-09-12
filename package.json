@@ -1,12 +1,12 @@
 {
   "name": "@dariolm/react-common-components-library",
-  "version": "0.0.3",
+  "version": "0.0.",
   "description": "Librería de componentes React (Empathy.co)",
-  "main": "build/main.js",
+  "main": "modules/main.js",
   "files": [
-    "build"
+    "modules"
   ],
-  "types": "build/index.d.ts",
+  "types": "modules/index.d.ts",
   "scripts": {
     "build": "webpack --mode production",
     "test": "jest",
