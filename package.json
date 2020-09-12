@@ -1,6 +1,6 @@
 {
   "name": "@dariolm/react-common-components-library",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "Librería de componentes React (Empathy.co)",
   "main": "build/main.js",
   "files": [
@@ -18,14 +18,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DarioLM/CommonComponents.git"
+    "url": "git+https://github.com/DarioLM/react-common-components-library.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/dariolm"
   },
   "author": "dariolm",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DarioLM/CommonComponents/issues"
+    "url": "https://github.com/DarioLM/react-common-components-library/issues"
   },
-  "homepage": "https://github.com/DarioLM/CommonComponents#readme",
+  "homepage": "https://github.com/DarioLM/react-common-components-library#readme",
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@storybook/react": "^5.3.21",

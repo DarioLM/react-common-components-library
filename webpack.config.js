@@ -1,7 +1,12 @@
 const path = require("path");
 
 module.exports = {
-  entry: "./src/index.ts",
+  entry: {
+    main: "./src/index.ts",
+    button: "./src/Components/Button/Button.tsx",
+    link:  "./src/Components/Link/Link.tsx",
+    // tabPanel: "",
+  },
   output: {
     path: path.resolve(__dirname, "build"),
     filename: "[name].js",
@@ -13,6 +18,17 @@ module.exports = {
     alias: {
         Assets: path.resolve(__dirname, "src/assets/")
       }
+  },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all',
+        },
+      },
+    },
   },
   module: {
     rules: [
