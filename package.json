@@ -1,6 +1,6 @@
 {
   "name": "@dariolm/react-common-components-library",
-  "version": "0.0.5",
+  "version": "0.0.8",
   "description": "Librería de componentes React (Empathy.co)",
   "main": "modules/main.js",
   "files": [
@@ -13,7 +13,6 @@
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 6006",
     "storybook:export": "build-storybook",
-    "generate": "node ./util/create-component",
     "prepublishOnly": "npm run build"
   },
   "repository": {

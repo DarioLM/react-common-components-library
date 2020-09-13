@@ -9,7 +9,7 @@ interface TabProps {
 
 export interface TabsPanelProps {
     theme?: "light" | "dark";
-    tabSelected: TabProps,
+    initTab?: TabProps,
     icon?: string,
     tabs: Array<TabProps>,
   }

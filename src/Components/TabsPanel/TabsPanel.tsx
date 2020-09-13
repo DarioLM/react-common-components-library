@@ -4,8 +4,8 @@ import { TabsPanelProps } from "./TabsPanel.types";
 
 import "./TabsPanel.scss";
 
-const TabsPanel: React.FC<TabsPanelProps> = ({ tabs, tabSelected, theme = "light" }) => {
-  const [actualTab, setActualTab] = useState(tabSelected);
+const TabsPanel: React.FC<TabsPanelProps> = ({ tabs, initTab, theme = "light" }) => {
+  const [actualTab, setActualTab] = useState(initTab || tabs[0]);
   return (
     <div className={`tabs-component tabs-component-${theme}`}>
       <div data-testid="tabs-component" className="tabs-component_header">

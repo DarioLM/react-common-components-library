@@ -9,7 +9,8 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, "modules"),
-    filename: "[name].js",
+    filename: '[name].js',
+    chunkFilename: '[name].[chunkhash].js',
     library: "react-common-components-library",
     libraryTarget: "umd"
   },

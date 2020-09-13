@@ -37,10 +37,10 @@ const loadingTab = {
     loading: true,
 };
 
-export const Light = () => <TabsPanel tabSelected={commonTabs[0]} tabs={commonTabs}/>;
+export const Light = () => <TabsPanel tabs={commonTabs}/>;
 
-export const Dark = () => <TabsPanel tabSelected={commonTabs[0]}  theme="dark" tabs={commonTabs} />;
+export const Dark = () => <TabsPanel theme="dark" tabs={commonTabs} />;
 
-export const LoadingStatus = () => <TabsPanel tabSelected={commonTabs[0]}  icon="home" tabs={[...commonTabs, loadingTab]} />;
+export const LoadingStatus = () => <TabsPanel tabs={[...commonTabs, loadingTab]} />;
 
-export const DisabledStatus = () => <TabsPanel tabSelected={commonTabs[0]}  icon="home"tabs={[...commonTabs, disabledTab]} />;
+export const DisabledStatus = () => <TabsPanel tabs={[...commonTabs, disabledTab]} />;
