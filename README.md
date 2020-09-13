@@ -1,5 +1,12 @@
 # react-common-components-library 
- Librería de componentes React (Empathy.co) [react-common-components-library](https://github.com/DarioLM/react-common-components-library).
+ Librería de componentes React para la tarea solicitada por **empathy.co** [react-common-components-library](https://github.com/DarioLM/react-common-components-library).
+
+## Engines
+
+De forma local se han usado las siguientes versiones de:
+- **NodeJS**: 10.16.3
+- **Yarn**: 1.17.3
+- **Npm**: 6.9.0
 
 ## Tecnologías usadas
 
@@ -12,7 +19,7 @@
 
 ### `yarn storybook o npm run-script storybook`
 
-Compilará y abrirá el [Storybook](http://localhost:6006/) del proyecto en el puerto 6060.<br />
+Compilará y abrirá el [Storybook](http://localhost:6006/) del proyecto en el puerto 6006.<br />
 
 ### `yarn test o npm run-script test`
 
@@ -23,13 +30,13 @@ Lanzará Jest contra todos los tests disponibles en el proyecto.
 Se compilará (en modo producción) la aplicación para permitir su publicación y posterior uso.
 Cabe destacar que "prePublish" está configurado para ejecutar build antes de cada "npm publish".
 
-## Datos de interés
+## Importante
 
 Todos los componentes se pueden consultar y visualizar en el **Storybook**.
 
-Se han configurado los "entry points" de la aplicación de forma que cada componente individual [Button, Link, TabsPanel] se
-exponga en chunks separados, permitiendo imports dinámicos y evitando que todo se junte en un mismo bundle.
+Se han configurado los "entry points" de la aplicación de forma que cada componente individual **[Button, Link, TabsPanel]** se
+exponga en chunks separados, permitiendo imports dinámicos y evitando que todo se compile en un solo bundle.
 
-La síntaxis para el uso beneficíandose de dicha configuración es:
+La síntaxis para el uso de la librería es el siguiente:
 
-- import *Componente* @dariolm/react-common-components-library/modules/*componente
+    import <Componente> @dariolm/react-common-components-library/modules/<componente>
