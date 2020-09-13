@@ -9,7 +9,9 @@ describe("Test Button Component", () => {
 
   beforeEach(() => {
     props = {
-      theme: "primary"
+      type: "primary",
+      onClick: () => {},
+      content: "Click here",
     };
   });
 
@@ -22,8 +24,8 @@ describe("Test Button Component", () => {
     expect(buttonComponent).toHaveClass("button-component-primary");
   });
 
-  it("should have secondary className with theme set as secondary", () => {
-    props.theme = "secondary";
+  it("should have secondary className with type set as secondary", () => {
+    props.type = "secondary";
     const { getByTestId } = renderComponent();
 
     const buttonComponent = getByTestId("button-component");

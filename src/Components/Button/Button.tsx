@@ -4,13 +4,13 @@ import { ButtonProps } from "./Button.types";
 
 import "./Button.scss";
 
-const Button: React.FC<ButtonProps> = ({ theme }) => (
+const Button: React.FC<ButtonProps> = ({ type, onClick, content }) => (
   <div
     data-testid="button-component"
-    className={`button-component button-component-${theme}`}
+    className={`button-component button-component-${type}`}
+    onClick={() => onClick()}
   >
-    <h1 className="heading">I'm the button component</h1>
-    <button>Click me!!!</button>
+    {content}
   </div>
 );
 

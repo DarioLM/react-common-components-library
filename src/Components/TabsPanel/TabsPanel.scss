@@ -1,0 +1,60 @@
+@import "Assets/variables.scss";
+@import "Assets/typography.scss";
+
+.tabs-component {
+  width: fit-content;
+}
+
+.tabs-component_header {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+    & .tabs-component_tab {
+      @include tabLabel;
+      height: 30px;
+      flex: 1;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
+.tabs-component-light {
+  & .tabs-component_tab {
+    background: $light;
+    color: $tabColorlight;
+    border-bottom: 5px solid grey;
+  }
+  & .tabs-component_tab--selected {
+    color: $tabSelected;
+  }
+  & .tabs-component_tab--disabled {
+    background: #80808026;
+    color: #ffffff;
+    cursor: not-allowed;
+  }
+}
+
+.tabs-component-dark {
+  & .tabs-component_tab {
+    background: $dark;
+    color: $tabColordark;
+    border-bottom: 5px solid #ae91ae;
+  }
+  & .tabs-component_tab--selected {
+    color: $tabSelected;
+  }
+  & .tabs-component_content {
+    background: $dark;
+    color: $light;
+  }
+}
+
+.tabs-component_content {
+  min-width: 360px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

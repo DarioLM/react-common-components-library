@@ -5,6 +5,6 @@ export default {
   title: "Button"
 };
 
-export const Primary = () => <Button theme="primary" />;
+export const Primary = () => <Button type="primary" onClick={() => console.log("Primary button!")} content="Confirm"/>;
 
-export const Secondary = () => <Button theme="secondary" />;
+export const Secondary = () => <Button type="secondary" onClick={() => console.log("Secondary button!")} content="Cancel" />;

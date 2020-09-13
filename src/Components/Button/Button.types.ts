@@ -1,3 +1,7 @@
+import { Component } from "react";
+
 export interface ButtonProps {
-    theme: "primary" | "secondary";
+    type: "primary" | "secondary";
+    onClick: Function,
+    content: any,
   }

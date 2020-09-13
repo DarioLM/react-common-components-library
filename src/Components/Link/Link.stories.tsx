@@ -14,5 +14,3 @@ const commonProps = {
 export const Light = () => <Link {...commonProps} />;
 
 export const Dark = () => <Link theme="dark" {...commonProps} />;
-
-export const withIcon = () => <Link icon="home"  {...commonProps} />;
