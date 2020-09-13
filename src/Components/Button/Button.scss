@@ -1,16 +1,33 @@
-.button-component {
-    background-color: white;
-    border: 1px solid black;
-    padding: 16px;
-    width: 360px;
-    text-align: center;
+@import "Assets/variables.scss";
+@import "Assets/typography.scss";
 
-    .heading {
-        font-size: 64px;
+.button-component {
+    @include title;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 250px;
+    height: 100px;
+    border-radius: 3px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &.button-component-primary {
+        background-color: $primaryBackground;
+        color: $primaryColor;
+        border: solid 6px $secondaryColor;
     }
 
     &.button-component-secondary {
-        background-color: black;
-        color: white;
+        background-color: transparent;
+        color: $secondaryColor;
+        border: solid 6px $secondaryColor;
+    }
+
+    &:hover {
+        filter: opacity(0.7);
     }
 }

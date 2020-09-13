@@ -12,3 +12,8 @@ $font-family: "Open Sans", sans-serif, Helvetica;
   font-size: 2em;
   font-weight: 800;
 }
+
+@mixin tabLabel {
+  @include font-defaults;
+  font-weight: 800;
+}
