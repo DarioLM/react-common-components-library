@@ -1,6 +1,6 @@
 {
   "name": "@dariolm/react-common-components-library",
-  "version": "0.0.",
+  "version": "0.0.5",
   "description": "Librería de componentes React (Empathy.co)",
   "main": "modules/main.js",
   "files": [
