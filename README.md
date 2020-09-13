@@ -17,6 +17,10 @@ De forma local se han usado las siguientes versiones de:
 - Jest
 - StoryBook: Como visualizador y playground de los componentes y sus diferentes estados.
 
+### `npm install`
+
+Se instalarán las dependencias necesarias.
+
 ### `yarn storybook o npm run-script storybook`
 
 Compilará y abrirá el [Storybook](http://localhost:6006/) del proyecto en el puerto 6006.<br />
@@ -28,7 +32,10 @@ Lanzará Jest contra todos los tests disponibles en el proyecto.
 ### `yarn build o npm run-script build`
 
 Se compilará (en modo producción) la aplicación para permitir su publicación y posterior uso.
+
 Cabe destacar que "prePublish" está configurado para ejecutar build antes de cada "npm publish".
+
+    Nota: Eliminar carpertas *build* y *modules* antes de la ejecución de una nueva build.
 
 ## Importante
 

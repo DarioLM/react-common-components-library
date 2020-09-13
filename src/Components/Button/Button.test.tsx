@@ -16,20 +16,19 @@ describe("Test Button Component", () => {
   });
 
   const renderComponent = () => render(<Button {...props} />);
-
-  it("should have primary className with default props", () => {
+  it("should have primary className", () => {
     const { getByTestId } = renderComponent();
     const buttonComponent = getByTestId("button-component");
-
     expect(buttonComponent).toHaveClass("button-component-primary");
+    expect(buttonComponent).toHaveTextContent(props.content);
   });
 
-  it("should have secondary className with type set as secondary", () => {
+  it("should have secondary className", () => {
     props.type = "secondary";
+    props.content = "Confirm";
     const { getByTestId } = renderComponent();
-
     const buttonComponent = getByTestId("button-component");
-
     expect(buttonComponent).toHaveClass("button-component-secondary");
+    expect(buttonComponent).toHaveTextContent(props.content);
   });
 });

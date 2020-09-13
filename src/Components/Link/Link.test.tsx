@@ -9,7 +9,7 @@ describe("Test Link Component", () => {
 
   const renderComponent = props => render(<Link {...props} />);
 
-  it("Link shows the content correctly", () => {
+  it("Link shows the content correctly and have expected atributes", () => {
     props = {
       target: LINK_TARGETS[0],
       to: "https://www.empathy.co/",
