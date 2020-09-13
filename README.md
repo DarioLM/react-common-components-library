@@ -16,6 +16,8 @@ De forma local se han usado las siguientes versiones de:
 - SASS
 - React
 - Webpack: Code Splitting, SplitChunks.
+
+  ![Bundle chunks](./src/assets/images/bundle_entry_points.jpg)
 - Jest
 - StoryBook: Visualizador y playground de los componentes y sus diferentes estados.
 
