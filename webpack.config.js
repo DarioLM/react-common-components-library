@@ -5,7 +5,7 @@ module.exports = {
     main: "./src/index.ts",
     button: "./src/Components/Button/Button.tsx",
     link:  "./src/Components/Link/Link.tsx",
-    // tabPanel: "",
+    tabsPanel: "./src/Components/TabsPanel/TabsPanel.tsx",
   },
   output: {
     path: path.resolve(__dirname, "modules"),
