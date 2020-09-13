@@ -3,7 +3,7 @@ const webpackConfig = require("../webpack.config");
 module.exports = {
   stories: ["../src/**/*.stories.tsx"],
   // Storybook addons: https://storybook.js.org/addons/
-  addons: [],
+  addons: ["@storybook/addon-docs", "@storybook/addon-controls"],
   webpackFinal: async (config) => {
     config.module.rules.push({
       test: /\.scss$/,

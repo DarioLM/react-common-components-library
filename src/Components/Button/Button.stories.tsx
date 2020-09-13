@@ -2,9 +2,22 @@ import React from "react";
 import Button from './Button';
 
 export default {
-  title: "Button"
+  title: "Button",
+  component: Button,
+  argTypes: {
+    type: {
+      control: {
+        type: 'select',
+        options: ['primary', 'secondary'],
+      },
+    },
+  },
 };
 
-export const Primary = () => <Button type="primary" onClick={() => console.log("Primary button!")} content="Confirm"/>;
+const Template = (args) => <Button {...args} />;
 
-export const Secondary = () => <Button type="secondary" onClick={() => console.log("Secondary button!")} content="Cancel" />;
+export const Primary = Template.bind({});
+Primary.args = { type: "primary", onClick: () => console.log("Primary button!"), content: "Primary" };
+
+export const Secondary = Template.bind({});
+Secondary.args = { type: "secondary", onClick: () => console.log("Primary button!"), content: "Secondary" };

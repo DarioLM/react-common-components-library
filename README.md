@@ -1,6 +1,8 @@
 # react-common-components-library 
  Librería de componentes React para la tarea solicitada por **empathy.co** [react-common-components-library](https://github.com/DarioLM/react-common-components-library).
 
+ StoryBook disponible en: https://dariolm.github.io/react-common-components-library/
+
 ## Engines
 
 De forma local se han usado las siguientes versiones de:
@@ -15,7 +17,9 @@ De forma local se han usado las siguientes versiones de:
 - React
 - Webpack: Code Splitting, SplitChunks.
 - Jest
-- StoryBook: Como visualizador y playground de los componentes y sus diferentes estados.
+- StoryBook: Visualizador y playground de los componentes y sus diferentes estados.
+
+  El Storybook puede visitarse en el propio repositorio visitando [StoryBook](https://dariolm.github.io/react-common-components-library/?path=/story/button--primary)
 
 ### `npm install`
 
@@ -23,7 +27,7 @@ Se instalarán las dependencias necesarias.
 
 ### `yarn storybook o npm run-script storybook`
 
-Compilará y abrirá el [Storybook](http://localhost:6006/) del proyecto en el puerto 6006.<br />
+Compilará y abrirá el [Storybook](https://dariolm.github.io/react-common-components-library/?path=/story/button--primary) del proyecto en el puerto 6006.<br />
 
 ### `yarn test o npm run-script test`
 

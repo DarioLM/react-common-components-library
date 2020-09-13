@@ -1,8 +1,23 @@
 import React from "react";
 import TabsPanel from './TabsPanel';
 import Link from "../Link/Link";
+
 export default {
-  title: "TabsPanel"
+  title: "TabsPanel",
+  content: TabsPanel,
+  argTypes: {
+    theme: {
+      control: {
+        type: 'select',
+        options: ['light', 'dark'],
+      },
+    },
+    tabs: {
+      control: {
+        type: 'object',
+      },
+    },
+  },
 };
 
 const commonTabs = [
@@ -37,10 +52,16 @@ const loadingTab = {
     loading: true,
 };
 
-export const Light = () => <TabsPanel tabs={commonTabs}/>;
+const Template = (args) => <TabsPanel {...args} />;
 
-export const Dark = () => <TabsPanel theme="dark" tabs={commonTabs} />;
+export const Light = Template.bind({});
+Light.args = {theme: "light", tabs: commonTabs };
 
-export const LoadingStatus = () => <TabsPanel tabs={[...commonTabs, loadingTab]} />;
+export const Dark = Template.bind({});
+Dark.args = {theme: "dark", tabs: commonTabs };
 
-export const DisabledStatus = () => <TabsPanel tabs={[...commonTabs, disabledTab]} />;
+export const LoadingStatus = Template.bind({});
+LoadingStatus.args = {theme: "light", tabs: [...commonTabs, loadingTab] };
+
+export const DisabledStatus = Template.bind({});
+DisabledStatus.args = {theme: "light", tabs: [...commonTabs, disabledTab] };
