@@ -8,8 +8,8 @@ interface TabProps {
 }
 
 export interface TabsPanelProps {
+    className?: string,
     theme?: "light" | "dark";
     initTab?: TabProps,
-    icon?: string,
     tabs: Array<TabProps>,
   }
