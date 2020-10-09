@@ -1,5 +1,5 @@
 # react-common-components-library 
- Librería de componentes React para la tarea solicitada por **empathy.co** [react-common-components-library](https://github.com/DarioLM/react-common-components-library).
+ Librería de componentes React [react-common-components-library](https://github.com/DarioLM/react-common-components-library).
 
  StoryBook disponible en: https://dariolm.github.io/react-common-components-library/
 
